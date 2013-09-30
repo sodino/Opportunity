@@ -1,8 +1,8 @@
 package lab.sodino.jobs.activity;
 
-import lab.opportunity.R;
-import lab.opportunity.util.LogOut;
+import lab.sodino.jobs.R;
 import lab.sodino.jobs.activity.BaseActivity;
+import lab.sodino.util.LogOut;
 import android.graphics.drawable.Animatable;
 import android.os.Bundle;
 import android.widget.ImageView;
