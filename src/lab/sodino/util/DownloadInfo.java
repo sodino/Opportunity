@@ -2,34 +2,38 @@ package lab.sodino.util;
 
 import java.io.File;
 
+/**
+ * @author Sodino E-mail:sodino@qq.com
+ * @version Time：2013年10月1日 下午5:07:22
+ * */
 public class DownloadInfo {
-	/**数据直接读到内存。<br/>*/
+	/**���ֱ�Ӷ����ڴ档<br/>*/
 	public static final int ACTION_READ = 1;
-	/**数据直接存到本地。<br/>*/
+	/**���ֱ�Ӵ浽���ء�<br/>*/
 	public static final int ACTION_SAVE = 2;
 
 	
-	/**记录原始的url。*/
+	/**��¼ԭʼ��url��*/
 	public String urlOriginal;
-	/**标识当前的任务。*/
+	/**��ʶ��ǰ������*/
 	public int task;
 	public String respContentEncoding; 
 	public String respContentType; 
 	public int respContentLength; 
 	public int respCode; 
-	/**当前链接的结果。*/
+	/**��ǰ���ӵĽ��*/
 	public int resultCode;
 
-	/**存储直接下载时获取到的数据。<br/>
-	 * 用于短数据。<br/>*/
+	/**�洢ֱ������ʱ��ȡ������ݡ�<br/>
+	 * ���ڶ���ݡ�<br/>*/
 	public byte[] data;
 	/**
 	 * @see ACTION_READ
 	 * @see ACTION_SAVE
 	 * */
 	public int dataAction = ACTION_SAVE;
-	/**用于记录当前下载操作所要保存的本地路径。*/
+	/**���ڼ�¼��ǰ���ز�����Ҫ����ı���·����*/
 	public File file;
-	/**记录下载过程中发生的异常详情。*/
+	/**��¼���ع���з�����쳣���顣*/
 	public String errorDetail;
 }

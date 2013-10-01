@@ -7,6 +7,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.Proxy.Type;
 
+/**
+ * @author Sodino E-mail:sodino@qq.com
+ * @version Time：2013年10月1日 下午5:07:22
+ * */
 public class APNUtil {
     public static String APN_TYPE_CTNET = "ctnet";
     public static String APN_TYPE_CTWAP = "ctwap";
