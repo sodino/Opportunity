@@ -1,4 +1,4 @@
-package lab.sodino.util;
+package lab.sodino.util.network;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;

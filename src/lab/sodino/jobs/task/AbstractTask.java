@@ -11,5 +11,4 @@ public abstract class AbstractTask implements Runnable{
 		return SUCCESS;
 	}
 	
-	
 }

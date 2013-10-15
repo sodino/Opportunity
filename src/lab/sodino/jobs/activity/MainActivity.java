@@ -1,13 +1,7 @@
 package lab.sodino.jobs.activity;
 
-import java.io.UnsupportedEncodingException;
-
 import lab.sodino.jobs.R;
-import lab.sodino.jobs.activity.BaseActivity;
-import lab.sodino.jobs.app.JobsConstant;
-import lab.sodino.util.DownloadInfo;
-import lab.sodino.util.LogOut;
-import lab.sodino.util.NetworkUtil;
+import lab.sodino.jobs.task.JobsDownloadTask;
 import android.graphics.drawable.Animatable;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -20,7 +14,7 @@ public class MainActivity extends BaseActivity {
 		setContentView(R.layout.activity_main);
 		imgLoading = (ImageView)findViewById(R.id.imgLoading);
 		showLoadingDialog();
-		
+		new Thread(new JobsDownloadTask()).start();
 	}
 
 	private void showLoadingDialog(){
