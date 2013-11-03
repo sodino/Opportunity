@@ -213,3 +213,7 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+gen/lab/sodino/jobs/BuildConfig.java
+
+gen/lab/sodino/jobs/R.java

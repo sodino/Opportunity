@@ -23,6 +23,7 @@ public abstract class Esse {
 		return getClass().getSimpleName();
 	}
 	
+	@Override
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
 		sb.append("_id=" + _id);
@@ -51,6 +52,8 @@ public abstract class Esse {
 					e.printStackTrace();
 				}
 			}
+			
+			cls = cls.getSuperclass();
 		}
 		return sb.toString();
 	}

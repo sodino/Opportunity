@@ -5,7 +5,7 @@ package lab.sodino.util;
  * @version Time：2013年10月1日 下午5:07:22
  * */
 public class LogOut {
-	public static final String LOG_TAG = "ANDROID_LAB";
+	public static final String LOG_TAG = "LAB";
 	/**
 	 * 调试输出方法。<br/>
 	 * 输出样本：<br/>
@@ -70,6 +70,6 @@ public class LogOut {
 
 	// 打log的函数（调用这个函数的函数），是在函数栈的第5层
 	public static int e(String msg) {
-		return android.util.Log.d(LOG_TAG,getClassNameByStackIndex(4)+"->"+msg);
+		return android.util.Log.d(LOG_TAG, getClassNameByStackIndex(4)+"->"+msg);
 	}
 }
